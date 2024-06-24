@@ -12,7 +12,7 @@ jobs:
         uses: microsoft/setup-msbuild@v2
 
       - name: Build app for release
-        run: msbuild unlockfps/unlockfps.vcxproj
+        run: msbuild unlockfps/unlockfps.vcxproj.filters
 
       - name: 上传编译结果到 Artifact (Upload build result to Artifact)
         uses: actions/upload-artifact@v4
